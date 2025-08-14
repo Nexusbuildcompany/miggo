@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Miggo — Cartão Gamer</title>
+  <style>
+    :root {
+      --bg: linear-gradient(135deg, #1a0f1f, #3d001d);
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --text: #fff;
+      --muted: #ccc;
+      --radius: 20px;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 24px;
+      width: min(90%, 420px);
+      box-shadow: 0 0 25px rgba(255, 0, 85, 0.3);
+      backdrop-filter: blur(12px);
+      text-align: center;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 16px;
+      overflow: hidden;
+      margin: 0 auto 16px;
+      border: 2px solid var(--card-border);
+      box-shadow: 0 0 15px rgba(255, 0, 85, 0.5);
+    }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 8px;
+    }
+    .tags {
+      margin-bottom: 20px;
+    }
+    .tag {
+      display: inline-block;
+      background: rgba(255, 0, 85, 0.2);
+      border: 1px solid rgba(255, 0, 85, 0.4);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      margin: 4px;
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .btn {
+      flex: 1;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .btn-youtube {
+      background: #ff0000;
+    }
+    .btn-discord {
+      background: #5865f2;
+    }
+    .btn-roblox {
+      background: #00b06f;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="card">
+    <div class="avatar">
+      <img src="miggo-avatar.png" alt="Foto do Miggo">
+    </div>
+    <h1>Miggo</h1>
+    <div class="tags">
+      <span class="tag">🎬 Editor de vídeo</span>
+      <span class="tag">🎮 Gamer</span>
+      <span class="tag">📹 YouTuber</span>
+    </div>
+    <div class="links">
+      <a href="https://www.youtube.com/@teu_canal" target="_blank" class="btn btn-youtube"><i class="fab fa-youtube"></i> YouTube</a>
+      <a href="https://discord.gg/teu_convite" target="_blank" class="btn btn-discord"><i class="fab fa-discord"></i> Discord</a>
+      <a href="https://www.roblox.com/users/teu_id/profile" target="_blank" class="btn btn-roblox"><i class="fas fa-cube"></i> Roblox</a>
+    </div>
+  </div>
+</body>
+</html>
